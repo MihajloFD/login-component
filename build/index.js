@@ -6466,9 +6466,7 @@ var SignInForm = function (_Component) {
       var buttonStyle = showForm ? btnActiveStyle : btnCustomStyle;
       return _react2.default.createElement(
         'div',
-        { className: 'parent', ref: function ref(_ref4) {
-            return _this2.ref = _ref4;
-          } },
+        { className: 'parent' },
         token || tokenProps ? _react2.default.createElement(
           'button',
           { className: 'btn', onClick: function onClick() {

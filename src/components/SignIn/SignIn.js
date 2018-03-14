@@ -77,7 +77,7 @@ class SignInForm extends Component {
     let errorStyle = errorMessage ? errorMessageStyle : '';
     let buttonStyle = showForm ? btnActiveStyle : btnCustomStyle;
     return (
-      <div className='parent' ref={(ref) => (this.ref = ref)} >
+      <div className='parent'>
         { token || tokenProps ? <button className='btn' onClick={() => this.handleSignOut()} >SignOut</button>
           : <button className={buttonStyle} onClick={() => this.handleDiplayForm()} >SignIn</button> }
         {showForm && (!token || !tokenProps)
