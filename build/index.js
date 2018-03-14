@@ -6747,16 +6747,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var App = function (_Component) {
-  _inherits(App, _Component);
+var SignInComponent = function (_Component) {
+  _inherits(SignInComponent, _Component);
 
-  function App() {
-    _classCallCheck(this, App);
+  function SignInComponent() {
+    _classCallCheck(this, SignInComponent);
 
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (SignInComponent.__proto__ || Object.getPrototypeOf(SignInComponent)).apply(this, arguments));
   }
 
-  _createClass(App, [{
+  _createClass(SignInComponent, [{
     key: 'render',
     value: function render() {
       var createStoreWithMiddleware = (0, _redux.applyMiddleware)(_reduxThunk2.default)(_redux.createStore);
@@ -6775,10 +6775,10 @@ var App = function (_Component) {
     }
   }]);
 
-  return App;
+  return SignInComponent;
 }(_react.Component);
 
-exports.default = App;
+exports.default = SignInComponent;
 
 /***/ }),
 /* 130 */

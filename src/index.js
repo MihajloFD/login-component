@@ -8,7 +8,7 @@ import reducers from './reducers';
 
 import SignIn from './components/SignIn';
 
-export default class App extends Component {
+export default class SignInComponent extends Component {
   render(){
     const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
     const store = createStoreWithMiddleware(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
